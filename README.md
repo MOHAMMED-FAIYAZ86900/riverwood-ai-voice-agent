@@ -69,7 +69,7 @@ Audio Output (Browser / Speaker)
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/riverwood-ai-voice-agent.git
+git clone https://github.com/MOHAMMED-FAIYAZ86900/riverwood-ai-voice-agent.git
 cd riverwood-ai-voice-agent
 ````
 

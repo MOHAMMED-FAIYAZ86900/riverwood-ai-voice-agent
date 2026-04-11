@@ -26,3 +26,20 @@ def speak_text(text):
         path = f.name
 
     playsound(path)
+
+def generate_audio_file(text):
+
+    text = text[:300]
+
+    audio_stream = client.text_to_speech.convert(
+        voice_id=VOICE_ID,
+        model_id="eleven_multilingual_v2",
+        text=text
+    )
+
+    import tempfile
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".mp3") as f:
+        for chunk in audio_stream:
+            f.write(chunk)
+        return f.name

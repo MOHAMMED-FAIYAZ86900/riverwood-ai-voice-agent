@@ -6,3 +6,5 @@ speechrecognition
 pyaudio
 python-dotenv
 whisper
+requests
+playsound==1.2.2
